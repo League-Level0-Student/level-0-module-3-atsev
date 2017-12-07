@@ -19,7 +19,16 @@ public static void main(String[] args) {
 		// 2. Ask the user to enter a name. Store their answer in a variable.
 
 		// 3. Show the superpower in a pop-up, depending on the name entered. 
-
-	}
+int x = JOptionPane.showOptionDialog(null, "Who's superpower do you want to know?", "", 0, JOptionPane.INFORMATION_MESSAGE, null, new String[] {"Bill", "August", "Bob" },null);
+if(x==3) {
+	JOptionPane.showMessageDialog(null, "Bob's super power is he can fly.");
+}
+if(x==2) {
+	JOptionPane.showMessageDialog(null, "August's super power is he can teleport.");
+}
+if(x==1) {
+	JOptionPane.showMessageDialog(null, "Bill's super power is he can read minds.");
+}
+}
 }
 
